@@ -24,11 +24,17 @@
             </div>
             <button type="button" class="btn btn-info" (click)="login()">Login</button>
             <div class="row">
-              <div class="col-lg-6 my-2 my-lg-1">
-                <a href="/register" style="text-decoration: none;">Need Account ? <span class="text-danger">Register</span></a>
+              <div class="col-lg-6 my-2 my-lg-1" >
+                <a
+                  routerLink="/register"
+                  style="text-decoration: none; cursor: pointer;"
+                >Need Account ? <span class="text-danger">Register</span></a>
               </div>
               <div class="col-lg-6 my-lg-1">
-                <a href="/forgot-password" class="text-dark" style="text-decoration: none;">Forget Password ?</a>
+                <a
+                  routerLink="/forgot-password" class="text-dark"
+                  style="text-decoration: none; cursor: pointer;"
+                >Forget Password ?</a>
               </div>
             </div>
           </form>

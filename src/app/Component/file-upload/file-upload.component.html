@@ -45,7 +45,7 @@
             <th> {{ file.name }} </th>
             <td> {{ file.size }} </td>
             <td class="text-nowrap">
-              <a href="{{file.url}}" class="btn btn-outline-info" type="button" download>Download</a>
+              <a routerLink="{{file.url}}" class="btn btn-outline-info" type="button" download>Download</a>
               <a class="btn btn-outline-danger ms-2" type="button" (click)="deleteFile(file)">Delete</a>
             </td>
           </tr>
