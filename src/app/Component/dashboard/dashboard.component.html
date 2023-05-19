@@ -7,45 +7,62 @@
           <form>
             <div class="form-floating mb-3">
               <input
-                type="text" class="form-control" id="firstName"
-                placeholder="Ahmed" [(ngModel)]="FirstName"
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder="Ahmed"
+                [(ngModel)]="FirstName"
                 name="firstName"
-                >
+              />
               <label class="text-muted" for="firstName">First Name</label>
             </div>
             <div class="form-floating mb-3">
               <input
-                type="text" class="form-control" id="lastName"
-                placeholder="******" [(ngModel)]="LastName"
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="******"
+                [(ngModel)]="LastName"
                 name="lastName"
-                >
+              />
               <label class="text-muted" for="lastName">Last Name</label>
             </div>
             <div class="form-floating mb-3">
               <input
-                type="email" class="form-control" id="email"
-                placeholder="name@example.com" [(ngModel)]="Email"
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="name@example.com"
+                [(ngModel)]="Email"
                 name="email"
-                >
+              />
               <label class="text-muted" for="email">Email Address</label>
             </div>
             <div class="form-floating mb-3">
               <input
-                type="mobile" class="form-control" id="mobile"
-                placeholder="0600000000" [(ngModel)]="Mobile"
+                type="mobile"
+                class="form-control"
+                id="mobile"
+                placeholder="0600000000"
+                [(ngModel)]="Mobile"
                 name="mobile"
-                >
+              />
               <label class="text-muted" for="mobile">Mobile</label>
             </div>
-            <button type="submit" class="btn btn-outline-success"
-              (click)="addStudent()">Add Student</button>
+            <button
+              type="submit"
+              class="btn btn-outline-success"
+              (click)="addStudent()"
+            >
+              Add Student
+            </button>
           </form>
         </div>
       </div>
     </div>
     <div class="col-lg-8 col">
       <h3 class="text-primary my-2 mx-1">Student List</h3>
-      <div class="card ">
+      <div class="card">
         <div class="card-body overflow-x-auto table-holder">
           <table class="table">
             <thead>
@@ -64,7 +81,13 @@
                 <td>{{ student.Email }}</td>
                 <td>{{ student.Mobile }}</td>
                 <td>
-                  <button type="button" class="btn btn-outline-danger" (click)="deleteStudent(student)">Delete</button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger"
+                    (click)="deleteStudent(student)"
+                  >
+                    Delete
+                  </button>
                 </td>
               </tr>
             </tbody>
@@ -72,10 +95,8 @@
         </div>
       </div>
     </div>
-    <a routerLink="upload-files">
-      <button class="btn btn-outline-danger my-3">
-        Upload Files
-      </button>
+    <a routerLink="/upload-files">
+      <button class="btn btn-outline-danger my-3">Upload Files</button>
     </a>
   </div>
 </div>
